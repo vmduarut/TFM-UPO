@@ -15,4 +15,4 @@ setwd("C:/Users/Bisite/Desktop/tfmUPO/GAPIT")
 
 myY <- read.table("C:/Users/Bisite/Desktop/tfmUPO/phenotype1000g.txt", head = TRUE, sep = "\t")
 myG <- read.csv("C:/Users/Bisite/Desktop/tfmUPO/ALL.chr.phase3_shapeit2_mvncall_integrated_v5b.20130502.genotypes.split.AF_0.05.hmp.txt" , head = FALSE, sep = "\t")
-myGAPIT_MLMM <- GAPIT(Y=myY, G=myG, PCA.total=5, model= c("GLM", "MLM", "CMLM", "FarmCPU", "Blink"), Multiple_analysis=TRUE)
+myGAPIT_MLMM <- GAPIT(Y=myY, G=myG, model= c("GLM", "MLM", "CMLM", "FarmCPU", "Blink", "FastCPU"), Multiple_analysis=TRUE)
